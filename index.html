@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscRealms - Vote</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .server-logo-long {
+            height: 130px;
+            margin-bottom: 1px;
+        }
+
+        .icon-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .icon-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #2b2b2b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+        }
+
+        .icon-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .discord:hover {
+            background-color: #5865F2;
+            box-shadow: 0 0 15px #5865F2;
+        }
+
+        .home:hover {
+            background-color: #7c4dff;
+            box-shadow: 0 0 15px #7c4dff;
+        }
+
+        .vote-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .vote-button {
+            background-color: #2b2b2b;
+            padding: 1.5rem 2.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+
+        .vote-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #7c4dff;
+        }
+
+
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            margin-top: auto;
+            border-top: 1px solid #333;
+            flex-shrink: 0;
+        }
+
+        .footer a {
+            color: #7c4dff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #9d7dff;
+            text-shadow: 0 0 10px #7c4dff55;
+        }
+
+        .footer-links {
+            margin: 1rem 0;
+        }
+
+        .license {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .license img {
+            vertical-align: middle;
+        }
+
+        @media (max-width: 768px) {
+            .server-logo-long {
+                width: 80%;
+                height: auto;
+            }
+
+            .vote-button {
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .footer-links a {
+                padding: 0.3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <img src="https://github.com/Disc-Realms-Network/cdn/blob/main/website-assets/Media/non-hdr/512.png?raw=true"
+         alt="Server Logo"
+         class="server-logo-long">
+    <div class="icon-container">
+        <a href="https://discord.gg/85ZaBCJTTv" class="icon-link discord" target="_blank">
+            <i class="fab fa-discord"></i>
+        </a>
+        <a href="https://discrealms.net/" class="icon-link home" target="_blank">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+</div>
+
+<div class="vote-container">
+    <a href="https://minecraft-server.net/vote/DiscRealms/" class="vote-button" target="_blank">Vote on Minecraft-Server.net</a>
+    <a href="https://topminecraftservers.org/vote/39269" class="vote-button" target="_blank">Vote on TopMinecraftServers</a>
+    <a href="https://minecraft-mp.com/server/337674/vote/" class="vote-button" target="_blank">Vote on Minecraft-MP</a>
+    <a href="https://minecraftservers.org/vote/667953" class="vote-button" target="_blank">Vote on MinecraftServers.org</a>
+    <a href="https://www.planetminecraft.com/server/disc-realms-network/vote/" class="vote-button" target="_blank">Vote on PlanetMinecraft</a>
+    <a href="https://minecraft-server-list.com/server/508172/vote/" class="vote-button" target="_blank">Vote on Server List</a>
+    <a href="https://findmcserver.com/server/discrealms" class="vote-button" target="_blank">Vote on FindMcServer</a>
+</div>
+
+<footer class="footer">
+    <div><strong>© 2025 Disc Realms™; Disc Realms Network™; Disc Realms Studios™</strong></div>
+    <br>
+    <div><strong>Disc Realms Network</strong> is not owned by or affiliated with <strong>Minecraft</strong>, <strong>Microsoft</strong> or <strong>Mojang AB</strong></div>
+    <br>
+    <div class="footer-links">
+        <a href="../termsandconditions">Terms and Conditions</a> |
+        <a href="mailto:support@discrealms.net">Contact Us</a> |
+        <a href="https://github.com/Disc-Realms-Network/website">Website Repository</a>
+    </div>
+    <div class="license">
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+            <a property="dct:title" rel="cc:attributionURL" href="https://discrealms.net">Disc Realms Network Website</a> by
+            <span property="cc:attributionName">Disc Realms Network</span> is licensed under
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                CC BY-NC-ND 4.0
+                <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+            </a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

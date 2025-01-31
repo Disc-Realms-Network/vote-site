@@ -1,1 +1,1 @@
-# vote-sit
+Vote site for Disc Realms Network!
